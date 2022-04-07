@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #C2B280
+}
+
+
+div {
+
+    animation-name: simpleAnimation;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    /* other properties */
+    width: 20%;
+    height: auto;
+
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes simpleAnimation {
+
+    0%,
+    100% {
+        background-color: #006792;
+        width: 75%;
+        height: 300px;
+        top: 0;
+        clip-path: polygon(0 47%, 8% 36%, 19% 27%, 31% 29%, 42% 45%, 48% 66%, 58% 79%, 76% 79%, 89% 75%, 100% 63%, 100% 100%, 0 100%);
+
+    }
+
+    50% {
+        background-color: #1FB5AD;
+
+        width: 50%;
+        height: 300px;
+        top: -100px;
+        clip-path: polygon(0 64%, 8% 76%, 19% 80%, 31% 78%, 42% 68%, 48% 46%, 58% 30%, 76% 28%, 89% 37%, 100% 48%, 100% 100%, 0 100%);
+
+    }
+}
